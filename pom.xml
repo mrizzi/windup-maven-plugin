@@ -30,9 +30,9 @@
    
     <scm>
         <tag>master</tag>
-        <url>http://github.com/windup/windup-maven-plugin</url>
-        <connection>scm:git:https://github.com/windup/windup-maven-plugin.git</connection>
-        <developerConnection>scm:git:git@github.com:windup/windup-maven-plugin.git</developerConnection>
+        <url>http://github.com/mrizzi/windup-maven-plugin</url>
+        <connection>scm:git:https://github.com/mrizzi/windup-maven-plugin.git</connection>
+        <developerConnection>scm:git:git@github.com:mrizzi/windup-maven-plugin.git</developerConnection>
     </scm>
 
     <organization>
@@ -60,12 +60,20 @@
     
     <distributionManagement>
         <snapshotRepository>
+            <id>myoss</id>
+            <url>http://mrizzi.hopto.org:8007/repository/maven-snapshots/</url>
+<!--
             <id>ossrh</id>
             <url>https://oss.sonatype.org/content/repositories/snapshots</url>
+-->
         </snapshotRepository>
         <repository>
+            <id>myoss</id>
+            <url>http://mrizzi.hopto.org:8007/repository/maven-releases/</url>
+<!--
             <id>ossrh</id>
             <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+-->
         </repository>
     </distributionManagement>
     
